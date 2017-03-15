@@ -1,21 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+// @flow weak
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+import React from 'react';
+import MuiThemeProvider, { MUI_SHEET_ORDER } from 'material-ui/styles/MuiThemeProvider';
+import createPalette from 'material-ui/styles/palette';
+import createMuiTheme from 'material-ui/styles/theme';
+import { blue, pink } from 'material-ui/styles/colors';
+
+import Site from './Site';
+
+function App(props) {
+
+  const palette = createPalette({
+    primary: blue,
+    accent: pink,
+  });
+
+  const { styleManager, theme } = MuiThemeProvider.createDefaultContext({
+    theme: createMuiTheme({ palette }),
+  });
+
+  styleManager.setSheetOrder(MUI_SHEET_ORDER.concat([
+
+  ]));
+
+  return (
+    <MuiThemeProvider theme={theme} styleManager={styleManager}>
+      <Site/>
+    </MuiThemeProvider>
+  );
 }
 
 export default App;
