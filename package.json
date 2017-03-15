@@ -4,7 +4,7 @@
   "description": "This is a non-production project to reveal some _magic_ behind the upcoming release of material-ui.com",
   "repository": "https://github.com/zsim0n/material-ui-experiment",
   "bugs": "https://github.com/zsim0n/material-ui-experiment/issues",
-  "homepage": "https:/zsim0n.github.io/material-ui-experiment",
+  "homepage": "https://zsim0n.github.io/material-ui-experiment/",
   "license": "Apache-2.0",
   "author": "Zoltan Simon <hello@zoltansimon.me> (http://zoltansimon.me/)",
   "main": "index.js",
@@ -21,12 +21,15 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"    
   }
 }
