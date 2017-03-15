@@ -36,11 +36,7 @@ class Site extends Component {
   };
 
   render() {
-    const classes = this
-      .context
-      .styleManager
-      .render(styleSheet);
-
+    const classes = this.context.styleManager.render(styleSheet);
     return (
       <div className={classes.root}>
         <AppBar className={classes.appbar}>
