@@ -19,7 +19,7 @@ The page will reload if you make edits. You will also see any lint errors in the
 
 ## JSS and JSS-Theme Reactor 
 
-The [@next](https://github.com/callemall/material-ui/tree/next) version using [JSS](cssinjs.org) and [JSS-Theme-Reactor](https://www.npmjs.com/package/jss-theme-reactor). JSS-Theme-Reactor requires a `ThemeObject`. The `MuiThemeProvider` Component adds an extra abstraction layer that manages these things.  It can create the `theme` a `palette`. Both the `theme`and the `styleManager`are available via `context` in the whole application.
+The [@next](https://github.com/callemall/material-ui/tree/next) version using [JSS](http://cssinjs.org) and [JSS-Theme-Reactor](https://www.npmjs.com/package/jss-theme-reactor). JSS-Theme-Reactor requires a `ThemeObject`. The `MuiThemeProvider` Component adds an extra abstraction layer that manages these things.  It can create the `theme` a `palette`. Both the `theme`and the `styleManager`are available via `context` in the whole application.
 
 You can see an example how is this working in the [App.js](https://github.com/zsim0n/material-ui-experiment/blob/master/src/App.js)
 
