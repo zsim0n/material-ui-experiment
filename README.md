@@ -2,7 +2,7 @@
 
 This is a non-production project to reveal some _magic_ behind the upcoming release of [material-ui](http://www.material-ui.com/#/)
 
-## _Discrlaimer_
+## _Disclaimer_
 _This is an unofficial repo. I've created it because I am trying to use material-ui in other projects. All the infromations are coming from my experiences playing with the code._
 
 ## Usage
